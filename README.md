@@ -21,6 +21,15 @@ EcomAgent automates the full Amazon FBA/FBM seller workflow — from product res
 
 ## Features
 
+### CSV Batch Listing Workflow
+- Read product inputs from an Excel-friendly CSV with UTF-8 BOM support
+- Generate multiple listings with bounded concurrency and row-level error isolation
+- Validate title, bullets, description, search terms, A+ topics, and SEO score
+- Export a review CSV with `success`, `needs_review`, and `failed` statuses
+
+See [the Chinese workflow guide](docs/csv-batch-listing.zh-CN.md) and
+[UPSTREAM.md](UPSTREAM.md) for attribution and personal extension scope.
+
 ### AI Product Research
 - Scrape Amazon Best Sellers / Movers & Shakers across 10+ categories
 - LLM scoring on 3 dimensions: competition, profit potential, trend

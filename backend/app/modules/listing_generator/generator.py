@@ -1,16 +1,8 @@
 import json
 from typing import Optional
 from app.ai import get_llm_provider
+from app.modules.listing_generator.constants import SUPPORTED_LANGUAGES
 from app.modules.listing_generator.models import GeneratedListing
-
-SUPPORTED_LANGUAGES = {
-    "en": "English (US)",
-    "de": "German",
-    "fr": "French",
-    "es": "Spanish",
-    "it": "Italian",
-    "jp": "Japanese",
-}
 
 SYSTEM_PROMPT = """You are an expert Amazon listing copywriter and SEO specialist.
 You create high-converting, keyword-rich Amazon listings that comply with Amazon's style guidelines.

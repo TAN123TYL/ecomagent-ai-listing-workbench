@@ -51,6 +51,9 @@ jobs:
           OPENAI_API_KEY: sk-test-ci
         run: python -m pytest tests/test_core.py -v --tb=short
 
+      - name: Run CSV batch workflow tests
+        run: python -m pytest tests/test_batch_listing.py -v --tb=short
+
       - name: Run user-scenario acceptance tests
         env:
           DATABASE_URL: sqlite+aiosqlite:///./test_acceptance.db
